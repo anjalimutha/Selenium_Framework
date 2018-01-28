@@ -39,21 +39,8 @@ public class CreateAccount {
 		
 		//driver.findElement(By.xpath("//div[@id='hud-customer-name']/div/a[contains(text(),'\"+cust+\"')]")).isDisplayed();
 		
-		
-		
-		
-		
-		
-		 
-		
-		
-		
-		
-		
-		
-		
-
-		
+		driver.close();
+				
 	}
 	
 	
