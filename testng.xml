@@ -6,6 +6,7 @@
   <classes>
   <class name="testScripts.CreateAccount"/>
   <class name="testScripts.TodaysDeals"/>
+  <class name="testScripts.eGiftCards"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
