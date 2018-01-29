@@ -3,7 +3,6 @@
  * */
 package testScripts;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.xerces.util.URI.MalformedURIException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,10 +24,10 @@ public class CreateAccount {
 	
 	@BeforeMethod
 	@Parameters({"URL"})
-	public void browserSetup(String URL) throws MalformedURIException{
+	public void browserSetup(String URL){
 		System.setProperty("webdriver.chrome.driver","//Users//anjalimutha//Downloads//chromedriver");
 		InvokeBrowserSettings invokebrwsr = new InvokeBrowserSettings();
-		invokebrwsr.invokeBrowser("Chrome", URL);
+		driver = invokebrwsr.invokeBrowser("Chrome", URL);
 	}
 	
 	@AfterMethod
@@ -43,7 +42,7 @@ public class CreateAccount {
 
 	
 	@Test
-	public void TC_01_CreateAccount() {
+	public void TC_01_CreateAccount() throws Exception{
 		
 		String cust = RandomStringUtils.randomAlphabetic(10);
 		String email=RandomStringUtils.randomAlphanumeric(8) + "@gmail.com";

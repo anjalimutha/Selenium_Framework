@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="URL" value="https://www.amazon.com/"/>
+  <test name="Test(failed)">
+    <parameter name="URL" value="https://www.amazon.com/"/>
     <classes>
       <class name="testScripts.TodaysDeals">
         <methods>
+          <include name="cleanUp"/>
           <include name="TC_02"/>
+          <include name="browserSetup"/>
         </methods>
       </class> <!-- testScripts.TodaysDeals -->
+      <class name="testScripts.CreateAccount">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testScripts.CreateAccount -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

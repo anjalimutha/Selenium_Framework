@@ -6,7 +6,6 @@
 
 package testScripts;
 import java.util.concurrent.TimeUnit;
-import org.apache.xerces.util.URI.MalformedURIException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -23,10 +22,10 @@ public WebDriver driver;
 	
 	@BeforeMethod
 	@Parameters({"URL"})
-	public void browserSetup(String URL) throws MalformedURIException{
+	public void browserSetup(String URL){
 		System.setProperty("webdriver.chrome.driver","//Users//anjalimutha//Downloads//chromedriver");
 		InvokeBrowserSettings invokebrwsr = new InvokeBrowserSettings();
-		invokebrwsr.invokeBrowser("Chrome", URL);
+		driver = invokebrwsr.invokeBrowser("Chrome", URL);
 	}
 	
 	@AfterMethod
@@ -41,7 +40,7 @@ public WebDriver driver;
 
 	
 	@Test
-	public void TC_02() {
+	public void TC_02() throws Exception{
 		
 		
 		driver.findElement(By.xpath("//a[@tabindex=49][contains(text(),'Deals')]")).click();

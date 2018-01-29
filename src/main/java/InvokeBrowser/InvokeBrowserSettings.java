@@ -7,6 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class InvokeBrowserSettings {
 	public WebDriver driver;
+
 	
 	public WebDriver invokeBrowser(String browser_name, String URL) {
 		if(browser_name.equalsIgnoreCase("Firefox"))
@@ -26,7 +27,8 @@ public class InvokeBrowserSettings {
 			driver = new InternetExplorerDriver();
 			driver.manage().deleteAllCookies();
 		}
-		
+		driver.manage().window().maximize();
+		driver.get(URL);
 		return driver;
 	}
 
