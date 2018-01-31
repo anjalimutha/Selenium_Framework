@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31706" started-at="2018-01-29T21:53:28Z" finished-at="2018-01-29T21:54:00Z">
+  <suite name="Suite" duration-ms="7621" started-at="2018-01-31T00:34:04Z" finished-at="2018-01-31T00:34:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31706" started-at="2018-01-29T21:53:28Z" finished-at="2018-01-29T21:54:00Z">
-      <class name="testScripts.eGiftCards">
-        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testScripts.eGiftCards@5034c75a]" name="browserSetup" is-config="true" duration-ms="3281" started-at="2018-01-29T13:53:49Z" finished-at="2018-01-29T13:53:52Z">
+    <test name="Test" duration-ms="7621" started-at="2018-01-31T00:34:04Z" finished-at="2018-01-31T00:34:12Z">
+      <class name="testScripts.VerifyCreateAccount">
+        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testScripts.VerifyCreateAccount@6d00a15d]" name="browserSetup" is-config="true" duration-ms="3691" started-at="2018-01-30T16:34:04Z" finished-at="2018-01-30T16:34:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,57 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="TC_02_eGiftCards()[pri:0, instance:testScripts.eGiftCards@5034c75a]" name="TC_02_eGiftCards" duration-ms="7951" started-at="2018-01-29T13:53:52Z" finished-at="2018-01-29T13:54:00Z">
+        <test-method status="PASS" signature="checkCreateAccount()[pri:0, instance:testScripts.VerifyCreateAccount@6d00a15d]" name="checkCreateAccount" duration-ms="3529" started-at="2018-01-30T16:34:08Z" finished-at="2018-01-30T16:34:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_eGiftCards -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testScripts.eGiftCards@5034c75a]" name="cleanUp" is-config="true" duration-ms="338" started-at="2018-01-29T13:54:00Z" finished-at="2018-01-29T13:54:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- testScripts.eGiftCards -->
-      <class name="testScripts.TodaysDeals">
-        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testScripts.TodaysDeals@7c16905e]" name="browserSetup" is-config="true" duration-ms="3379" started-at="2018-01-29T13:53:37Z" finished-at="2018-01-29T13:53:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.amazon.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="TC_02()[pri:0, instance:testScripts.TodaysDeals@7c16905e]" name="TC_02" duration-ms="7298" started-at="2018-01-29T13:53:40Z" finished-at="2018-01-29T13:53:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02 -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testScripts.TodaysDeals@7c16905e]" name="cleanUp" is-config="true" duration-ms="1066" started-at="2018-01-29T13:53:48Z" finished-at="2018-01-29T13:53:49Z">
+        </test-method> <!-- checkCreateAccount -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testScripts.VerifyCreateAccount@6d00a15d]" name="cleanUp" is-config="true" duration-ms="382" started-at="2018-01-30T16:34:11Z" finished-at="2018-01-30T16:34:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- testScripts.TodaysDeals -->
-      <class name="testScripts.CreateAccount">
-        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testScripts.CreateAccount@2a2d45ba]" name="browserSetup" is-config="true" duration-ms="3985" started-at="2018-01-29T13:53:28Z" finished-at="2018-01-29T13:53:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.amazon.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="TC_01_CreateAccount()[pri:0, instance:testScripts.CreateAccount@2a2d45ba]" name="TC_01_CreateAccount" duration-ms="3490" started-at="2018-01-29T13:53:32Z" finished-at="2018-01-29T13:53:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_CreateAccount -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testScripts.CreateAccount@2a2d45ba]" name="cleanUp" is-config="true" duration-ms="893" started-at="2018-01-29T13:53:36Z" finished-at="2018-01-29T13:53:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- testScripts.CreateAccount -->
+      </class> <!-- testScripts.VerifyCreateAccount -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
